@@ -1,0 +1,35 @@
+# ============ 运行时数据与密钥（切勿入库）============
+*.db
+**/.jwt_secret
+.env
+# 从 backend/ 目录启动时可能产生的数据库目录
+backend/db/
+
+# 媒体与上传数据：忽略 data 下所有内容，但保留子目录本身及其占位文件。
+data/*
+!data/*/
+data/*/*
+!data/*/.gitkeep
+
+# ============ 依赖与构建产物 ============
+frontend/dist/
+frontend/node_modules/
+__pycache__/
+*.pyc
+# 历史离线依赖缓存目录（旧构建方式遗留，当前 Dockerfile 已改为在线安装；
+# 保留此规则以兼容从旧仓库克隆下来的目录）。
+backend/wheels/
+
+# ============ 日志与临时文件 ============
+logs/
+*.log
+.playwright-cli/
+
+# ============ 本地验收产物 ============
+# 界面验收截图与页面结构快照，仅用于本地人工核对，不属于项目源码。
+# 仓库内的正式配置统一使用 .yml 扩展名，不会被 *.yaml 规则误伤。
+*_check.png
+*_final.png
+*check.png
+screenshots/
+*.yaml

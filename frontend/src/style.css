@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream-50: #fffaf3;
+  --color-cream-100: #fff3e4;
+  --color-blush-100: #ffe9e0;
+  --color-blush-400: #ff9d7e;
+  --color-blush-500: #f97b56;
+  --color-blush-600: #e85f3a;
+  --color-honey-300: #ffd591;
+  --color-honey-500: #ffb347;
+  --font-sans: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  /* 全部使用系统字体栈，不依赖外部字体镜像 */
+  --font-art: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  --font-elegance: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, serif;
+}
+
+.font-art {
+  font-family: var(--font-art);
+  letter-spacing: 0.02em;
+}
+.font-elegance {
+  font-family: var(--font-elegance);
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  @apply bg-cream-50 text-stone-700 font-sans antialiased;
+}
+
+/* ---- 卡通皮肤：全站淡纹理 + 首页/登录页 banner ---- */
+/* 纹理单独一层（不吃点击），#app 抬到上层保证内容不被盖住 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background: url('/cartoon/texture.svg') repeat;
+  background-size: 300px 300px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+#app {
+  position: relative;
+  z-index: 1;
+}
+.hero-banner {
+  background-image: url('/cartoon/banner.svg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+.login-banner {
+  background-image: url('/cartoon/banner.svg');
+  background-size: cover;
+  background-position: center 55%;
+  background-repeat: no-repeat;
+}
+/* 贴纸轻轻上下浮动，页面不那么死板 */
+@keyframes cartoon-float {
+  0%, 100% { transform: translateY(0) rotate(-3deg); }
+  50% { transform: translateY(-7px) rotate(3deg); }
+}
+.cartoon-float { animation: cartoon-float 6s ease-in-out infinite; }
+.cartoon-float-slow { animation: cartoon-float 9s ease-in-out infinite; animation-delay: -3s; }
+@media (prefers-reduced-motion: reduce) {
+  .cartoon-float, .cartoon-float-slow { animation: none; }
+}
+
+/* 隐藏滚动条但保留滚动能力 */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 点赞心形爆闪动画 */
+@keyframes heart-pop {
+  0% { transform: scale(0) rotate(-12deg); opacity: 0; }
+  35% { transform: scale(1.35) rotate(4deg); opacity: 1; }
+  60% { transform: scale(0.95) rotate(-2deg); opacity: 1; }
+  100% { transform: scale(1.1); opacity: 0; }
+}
+.heart-burst {
+  animation: heart-pop 0.9s ease-out forwards;
+}

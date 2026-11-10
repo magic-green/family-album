@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 512" width="1280" height="512" role="img" aria-label="卡通横幅：小河、小鸭、云朵与花草">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf3"/>
+      <stop offset="0.55" stop-color="#fff3e4"/>
+      <stop offset="1" stop-color="#ffe9e0"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#d8f0f7"/>
+      <stop offset="1" stop-color="#bfe4f2"/>
+    </linearGradient>
+    <radialGradient id="sun">
+      <stop offset="0" stop-color="#ffe6ae" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffe6ae" stop-opacity="0"/>
+    </radialGradient>
+    <g id="cloud">
+      <path d="M14 44C4 44 0 36 3 29c3-7 11-9 17-7 3-9 11-14 20-13 8 0 15 5 18 12 8-1 14 4 14 11 0 7-6 12-15 12H14z" fill="#ffffff" stroke="#ffd9bc" stroke-width="2.5" stroke-linejoin="round"/>
+      <circle cx="28" cy="31" r="2.2" fill="#5b4636"/>
+      <circle cx="47" cy="31" r="2.2" fill="#5b4636"/>
+      <path d="M33 36c2 2 5 2 7 0" fill="none" stroke="#5b4636" stroke-width="2" stroke-linecap="round"/>
+      <circle cx="22" cy="36" r="3" fill="#ffc7a3" opacity="0.75"/>
+      <circle cx="53" cy="36" r="3" fill="#ffc7a3" opacity="0.75"/>
+    </g>
+    <g id="flower">
+      <circle cx="0" cy="-9" r="6" fill="#ffe9e0"/>
+      <circle cx="8.6" cy="-2.8" r="6" fill="#ffe9e0"/>
+      <circle cx="5.3" cy="7.3" r="6" fill="#ffe9e0"/>
+      <circle cx="-5.3" cy="7.3" r="6" fill="#ffe9e0"/>
+      <circle cx="-8.6" cy="-2.8" r="6" fill="#ffe9e0"/>
+      <circle cx="0" cy="0" r="5" fill="#ffd591"/>
+    </g>
+    <g id="star">
+      <path d="M0 -11 3 -3.5 11 -3 5 2.5 7 11 0 6 -7 11 -5 2.5 -11 -3 -3 -3.5z" fill="#ffd591" stroke="#ffb347" stroke-width="1.6" stroke-linejoin="round"/>
+    </g>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1280" height="512" fill="url(#sky)"/>
+  <circle cx="1090" cy="120" r="180" fill="url(#sun)"/>
+
+  <!-- 左侧留白区（只放极淡装饰，保证标题可读） -->
+  <g opacity="0.5">
+    <use href="#star" xlink:href="#star" x="90" y="70" transform="scale(0.8) translate(22 15)"/>
+    <use href="#star" xlink:href="#star" x="410" y="410" transform="scale(0.6) translate(270 270)"/>
+    <circle cx="500" cy="80" r="5" fill="#ffd591"/>
+    <circle cx="240" cy="440" r="4" fill="#ffb4a0"/>
+  </g>
+
+  <!-- 云朵 -->
+  <use href="#cloud" xlink:href="#cloud" x="620" y="52" transform="scale(1.15) translate(-80 -6)"/>
+  <use href="#cloud" xlink:href="#cloud" x="960" y="30" transform="scale(0.85) translate(170 10)"/>
+  <use href="#cloud" xlink:href="#cloud" x="760" y="150" transform="scale(0.6) translate(500 90)"/>
+
+  <!-- 星星 & 爱心气球 -->
+  <use href="#star" xlink:href="#star" x="880" y="120"/>
+  <use href="#star" xlink:href="#star" x="1160" y="210" transform="scale(0.7) translate(500 90)"/>
+  <g transform="translate(1050 170)">
+    <path d="M0 0c-9-12-24-3-18 9 4 8 18 17 18 17s14-9 18-17c6-12-9-21-18-9z" fill="#ffb4a0"/>
+    <path d="M0 26c-6 14 4 22 0 34" fill="none" stroke="#e8a48f" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- 远处草地 -->
+  <path d="M560 400c120-30 220 10 340-6s230-42 380-6v124H560z" fill="#e4f1d9"/>
+  <path d="M560 432c140-24 240 14 370 0s230-34 350-2v82H560z" fill="#d7ebc9"/>
+
+  <!-- 小河 -->
+  <path d="M700 512c40-70 130-72 180-120s90-64 190-58 150-30 210-62v42c-70 34-120 58-210 60s-130-2-190 52-100 88-180 128z" fill="url(#water)"/>
+  <path d="M740 500c40-62 120-64 170-108" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.65"/>
+  <path d="M1010 372c60-2 100-24 160-48" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- 小鸭子（水边） -->
+  <g transform="translate(870 300)">
+    <ellipse cx="0" cy="76" rx="70" ry="12" fill="#c9dcb7" opacity="0.7"/>
+    <path d="M-46 44c-14-10-18-28-8-40 10-12 30-10 40 2 12-10 34-8 44 4 12 14 6 34-8 42-14 9-54 5-68-8z" fill="#ffe08a" stroke="#f0bb5b" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="-2" cy="10" r="30" fill="#ffe9a8" stroke="#f0bb5b" stroke-width="3"/>
+    <circle cx="-12" cy="6" r="4" fill="#5b4636"/>
+    <circle cx="10" cy="6" r="4" fill="#5b4636"/>
+    <circle cx="-10.8" cy="4.6" r="1.4" fill="#ffffff"/>
+    <circle cx="11.2" cy="4.6" r="1.4" fill="#ffffff"/>
+    <path d="M-9 18c4 4 10 4 14 0" fill="none" stroke="#e8934a" stroke-width="3.5" stroke-linecap="round"/>
+    <ellipse cx="-24" cy="18" rx="7" ry="4" fill="#ffb4a0" opacity="0.85"/>
+    <ellipse cx="22" cy="18" rx="7" ry="4" fill="#ffb4a0" opacity="0.85"/>
+    <path d="M28 44c12-6 24-4 30 4-8 8-20 10-30 4z" fill="#ffe08a" stroke="#f0bb5b" stroke-width="2.5"/>
+    <path d="M-22 72l-4 12M14 72l4 12" stroke="#f0a54a" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- 花草蘑菇 -->
+  <g stroke="#a8cf90" stroke-width="3" stroke-linecap="round">
+    <path d="M680 470v-34M1150 470v-42M1210 480v-28"/>
+  </g>
+  <use href="#flower" xlink:href="#flower" x="680" y="428"/>
+  <use href="#flower" xlink:href="#flower" x="1150" y="420" transform="scale(0.8) translate(287 105)"/>
+  <use href="#flower" xlink:href="#flower" x="1210" y="446" transform="scale(0.65) translate(650 240)"/>
+  <g transform="translate(640 452)">
+    <path d="M-16 0v18c0 6 32 6 32 0V0z" fill="#fff8ef" stroke="#ffd9bc" stroke-width="2"/>
+    <path d="M-24 2c0-16 8-26 24-26s24 10 24 26z" fill="#ffb4a0"/>
+    <circle cx="-8" cy="-10" r="4" fill="#fff8ef"/>
+    <circle cx="9" cy="-15" r="3" fill="#fff8ef"/>
+  </g>
+  <g fill="#a8cf90" opacity="0.9">
+    <path d="M600 470q6-18 12 0zM770 480q6-16 12 0zM1100 486q6-18 12 0zM1250 470q6-16 12 0z"/>
+  </g>
+</svg>

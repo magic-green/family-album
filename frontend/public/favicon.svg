@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="16" fill="#f97b56"/>
+  <!-- 耳朵 -->
+  <circle cx="12" cy="34" r="6" fill="#ffd9bc"/>
+  <circle cx="52" cy="34" r="6" fill="#ffd9bc"/>
+  <!-- 脸蛋 -->
+  <circle cx="32" cy="34" r="22" fill="#ffe3c9"/>
+  <!-- 呆毛 -->
+  <ellipse cx="31" cy="10.5" rx="3" ry="2" fill="#c98a5b"/>
+  <ellipse cx="35.5" cy="8.5" rx="2.6" ry="3.6" fill="#c98a5b"/>
+  <!-- 眼睛 -->
+  <circle cx="24" cy="32" r="3.4" fill="#5b4636"/>
+  <circle cx="40" cy="32" r="3.4" fill="#5b4636"/>
+  <circle cx="25.1" cy="30.8" r="1.1" fill="#fff"/>
+  <circle cx="41.1" cy="30.8" r="1.1" fill="#fff"/>
+  <!-- 腮红 -->
+  <ellipse cx="17.5" cy="38" rx="3.6" ry="2.4" fill="#ffb4a0" opacity="0.85"/>
+  <ellipse cx="46.5" cy="38" rx="3.6" ry="2.4" fill="#ffb4a0" opacity="0.85"/>
+  <!-- 微笑 -->
+  <path d="M27 40.5q5 4 10 0" stroke="#5b4636" stroke-width="2.6" stroke-linecap="round" fill="none"/>
+</svg>

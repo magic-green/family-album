@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8EE"/>
+      <stop offset="1" stop-color="#E9F4F8"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#sky)"/>
+  <g fill="none" stroke-width="24">
+    <path d="M100 360 A220 220 0 0 1 540 360" stroke="#F6A28C"/>
+    <path d="M124 360 A196 196 0 0 1 516 360" stroke="#F9BE7A"/>
+    <path d="M148 360 A172 172 0 0 1 492 360" stroke="#FBD87A"/>
+    <path d="M172 360 A148 148 0 0 1 468 360" stroke="#BEE3C4"/>
+    <path d="M196 360 A124 124 0 0 1 444 360" stroke="#AFD6EE"/>
+    <path d="M220 360 A100 100 0 0 1 420 360" stroke="#D8C4EF"/>
+  </g>
+  <g fill="#FFFFFF" stroke="#7A5B45" stroke-width="5" stroke-linejoin="round">
+    <g transform="translate(6 210) scale(0.6)">
+      <path d="M96 320 C64 320 50 300 50 278 C50 254 70 236 94 236 C102 206 132 190 160 198 C178 174 212 176 226 202 C254 200 272 222 270 248 C290 258 292 284 276 302 C270 312 258 320 244 320 Z"/>
+    </g>
+    <g transform="translate(400 210) scale(0.6)">
+      <path d="M96 320 C64 320 50 300 50 278 C50 254 70 236 94 236 C102 206 132 190 160 198 C178 174 212 176 226 202 C254 200 272 222 270 248 C290 258 292 284 276 302 C270 312 258 320 244 320 Z"/>
+    </g>
+  </g>
+  <g fill="#FFD98E" opacity="0.9">
+    <circle cx="70" cy="110" r="8"/>
+    <circle cx="570" cy="120" r="9"/>
+    <circle cx="320" cy="70" r="6"/>
+  </g>
+  <path d="M0 424 Q160 400 320 424 T640 424 L640 480 L0 480 Z" fill="#FFE7CE" opacity="0.75"/>
+</svg>

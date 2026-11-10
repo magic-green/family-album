@@ -1,0 +1,18 @@
+# 构建镜像时裁剪上下文：运行时数据与构建产物通过卷挂载提供，不打进镜像
+.git
+.env
+*.db
+db/
+data/
+logs/
+frontend/
+demo/
+scripts/
+__pycache__/
+*.pyc
+*.log
+*.png
+*.yaml
+.playwright-cli/
+Makefile
+CONTRIBUTING.md

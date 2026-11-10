@@ -1,0 +1,58 @@
+# 拾光相册（family-album）Docker Compose 编排
+#
+# 首次启动前必须先构建前端产物，否则后端同源托管时页面为空白：
+#     cd frontend && npm ci && npm run build
+# 产物位于 frontend/dist，以只读方式挂载到容器 /app/static。
+#
+# 使用前请复制 .env.example 为 .env，并至少设置 INVITE_CODE（强必填，未设置会拒绝启动）；
+# JWT_SECRET 留空即可：后端用安全随机值自动生成，持久化到数据库文件同目录的
+# .jwt_secret，重启后自动复用。
+
+services:
+  family-album:
+    build: ./backend
+    container_name: family-album
+    ports:
+      - "8020:8000"
+    volumes:
+      - ./data:/app/data
+      - ./db:/app/db
+      - ./frontend/dist:/app/static:ro
+    environment:
+      # 强必填：注册邀请码。未设置或为空时 Compose 拒绝启动，后端也会直接报错。
+      INVITE_CODE: "${INVITE_CODE:?请在 .env 中设置 INVITE_CODE}"
+      # 可选：留空即可，后端用安全随机值自动生成并持久化到数据库文件同目录的
+      # .jwt_secret，重启后自动复用；也可用 openssl rand -hex 32 自行指定固定值。
+      JWT_SECRET: "${JWT_SECRET:-}"
+      JWT_EXPIRE_DAYS: "${JWT_EXPIRE_DAYS:-30}"
+      DATA_DIR: "/app/data"
+      DB_PATH: "/app/db/app.db"
+      # 同源托管前端构建产物（见上方只读卷挂载）。
+      STATIC_DIR: "/app/static"
+      # 可选：允许的前端来源，英文逗号分隔；本地开发需包含 Vite 端口。
+      CORS_ORIGINS: "${CORS_ORIGINS:-http://localhost:5173,http://localhost:8020}"
+      # 可选：AI 视觉打标签。默认连接本机模型服务；容器内访问宿主机上的模型服务时，
+      # 把 OLLAMA_URL 覆盖为 http://host.docker.internal:11434 并启用下方 extra_hosts。
+      # 未配置或模型不可用时 AI 打标签自动降级，不影响上传与浏览。
+      OLLAMA_URL: "${OLLAMA_URL:-http://localhost:11434}"
+      AI_TAG_MODEL: "${AI_TAG_MODEL:-}"
+      # 可选：逆地理编码服务密钥；留空时只显示原始坐标。
+      AMAP_KEY: "${AMAP_KEY:-}"
+    # 允许容器访问宿主机上的模型服务（AI 可选功能）。启用宿主机模型时取消注释。
+    # extra_hosts:
+    #   - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+  # 可选：容器化视觉模型服务，供 AI 打标签使用，默认不启用。
+  # 启用方式：docker compose --profile ai up -d --build
+  # 并在 .env 中设置 OLLAMA_URL=http://ollama:11434 与所需的 AI_TAG_MODEL。
+  # ollama:
+  #   image: ollama/ollama:latest
+  #   profiles: ["ai"]
+  #   container_name: family-album-ollama
+  #   volumes:
+  #     - model_data:/root/.ollama
+  #   restart: unless-stopped
+
+# volumes:
+#   model_data:

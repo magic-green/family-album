@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <rect width="640" height="480" fill="#F6EDFB"/>
+  <circle cx="480" cy="140" r="70" fill="#FFD36E" stroke="#7A5B45" stroke-width="5"/>
+  <circle cx="516" cy="116" r="60" fill="#F6EDFB"/>
+  <g fill="#FFD98E" stroke="#7A5B45" stroke-width="4" stroke-linejoin="round">
+    <g transform="translate(150 130) scale(1.15)">
+      <path d="M0 -24 L5.9 -8.1 L22.8 -7.4 L9.5 3.1 L14.1 19.4 L0 10 L-14.1 19.4 L-9.5 3.1 L-22.8 -7.4 L-5.9 -8.1 Z"/>
+    </g>
+    <g transform="translate(280 90) scale(0.7)">
+      <path d="M0 -24 L5.9 -8.1 L22.8 -7.4 L9.5 3.1 L14.1 19.4 L0 10 L-14.1 19.4 L-9.5 3.1 L-22.8 -7.4 L-5.9 -8.1 Z"/>
+    </g>
+    <g transform="translate(330 240) scale(1)">
+      <path d="M0 -24 L5.9 -8.1 L22.8 -7.4 L9.5 3.1 L14.1 19.4 L0 10 L-14.1 19.4 L-9.5 3.1 L-22.8 -7.4 L-5.9 -8.1 Z"/>
+    </g>
+    <g transform="translate(90 300) scale(0.8)">
+      <path d="M0 -24 L5.9 -8.1 L22.8 -7.4 L9.5 3.1 L14.1 19.4 L0 10 L-14.1 19.4 L-9.5 3.1 L-22.8 -7.4 L-5.9 -8.1 Z"/>
+    </g>
+    <g transform="translate(560 300) scale(0.9)">
+      <path d="M0 -24 L5.9 -8.1 L22.8 -7.4 L9.5 3.1 L14.1 19.4 L0 10 L-14.1 19.4 L-9.5 3.1 L-22.8 -7.4 L-5.9 -8.1 Z"/>
+    </g>
+  </g>
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="230" cy="200" r="6"/>
+    <circle cx="400" cy="160" r="5"/>
+    <circle cx="210" cy="340" r="7"/>
+    <circle cx="440" cy="330" r="5"/>
+    <circle cx="120" cy="200" r="4"/>
+  </g>
+  <path d="M0 410 Q160 384 320 410 T640 410 L640 480 L0 480 Z" fill="#E7D6F3" opacity="0.8"/>
+</svg>

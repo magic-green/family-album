@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" width="640" height="480">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF7EC"/>
+      <stop offset="1" stop-color="#FFE6D2"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" fill="url(#sky)"/>
+  <path d="M96 320 C64 320 50 300 50 278 C50 254 70 236 94 236 C102 206 132 190 160 198 C178 174 212 176 226 202 C254 200 272 222 270 248 C290 258 292 284 276 302 C270 312 258 320 244 320 Z" fill="#FFFFFF" stroke="#7A5B45" stroke-width="5" stroke-linejoin="round" opacity="0.9" transform="translate(360 60) scale(0.8)"/>
+  <g fill="none" stroke="#7A5B45" stroke-width="4">
+    <path d="M160 250 Q140 320 160 400"/>
+    <path d="M320 210 Q344 300 320 400"/>
+    <path d="M480 260 Q500 330 480 400"/>
+  </g>
+  <g transform="translate(160 186)">
+    <ellipse cx="0" cy="0" rx="54" ry="66" fill="#FFB7A0" stroke="#7A5B45" stroke-width="5"/>
+    <path d="M-11 64 L11 64 L0 82 Z" fill="#FFB7A0" stroke="#7A5B45" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="-17" cy="-22" rx="12" ry="20" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g transform="translate(320 146)">
+    <ellipse cx="0" cy="0" rx="56" ry="68" fill="#FFD98E" stroke="#7A5B45" stroke-width="5"/>
+    <path d="M-11 66 L11 66 L0 84 Z" fill="#FFD98E" stroke="#7A5B45" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="-18" cy="-24" rx="12" ry="20" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g transform="translate(480 196)">
+    <ellipse cx="0" cy="0" rx="52" ry="64" fill="#D9C7F0" stroke="#7A5B45" stroke-width="5"/>
+    <path d="M-11 62 L11 62 L0 80 Z" fill="#D9C7F0" stroke="#7A5B45" stroke-width="4" stroke-linejoin="round"/>
+    <ellipse cx="-16" cy="-22" rx="11" ry="19" fill="#FFFFFF" opacity="0.45"/>
+  </g>
+  <g fill="#FFF3D2" opacity="0.9">
+    <circle cx="90" cy="110" r="8"/>
+    <circle cx="250" cy="80" r="5"/>
+    <circle cx="560" cy="110" r="8"/>
+  </g>
+  <path d="M0 420 Q160 396 320 420 T640 420 L640 480 L0 480 Z" fill="#FFDCC0" opacity="0.7"/>
+</svg>

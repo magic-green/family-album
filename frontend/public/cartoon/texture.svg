@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="300" height="300" role="img" aria-label="淡色卡通平铺背景：云朵、星星、小花、脚印、水滴">
+  <defs>
+    <g id="c">
+      <path d="M8 24C2 24 0 19 2 15c2-4 6-5 10-4 2-5 6-8 11-7 4 0 8 3 9 7 5 0 8 3 8 7 0 4-3 6-9 6H8z" fill="#ffffff" stroke="#ffe1c9" stroke-width="1.6"/>
+      <circle cx="15" cy="18" r="1.2" fill="#c9a98f"/>
+      <circle cx="26" cy="18" r="1.2" fill="#c9a98f"/>
+    </g>
+    <g id="s">
+      <path d="M0 -8 2 -2.5 8 -2 3.5 2 5 8 0 4.5 -5 8 -3.5 2 -8 -2 -2 -2.5z" fill="#ffe3ad"/>
+    </g>
+    <g id="f">
+      <circle cx="0" cy="-6" r="4" fill="#ffe9e0"/>
+      <circle cx="5.7" cy="-1.9" r="4" fill="#ffe9e0"/>
+      <circle cx="3.5" cy="4.9" r="4" fill="#ffe9e0"/>
+      <circle cx="-3.5" cy="4.9" r="4" fill="#ffe9e0"/>
+      <circle cx="-5.7" cy="-1.9" r="4" fill="#ffe9e0"/>
+      <circle cx="0" cy="0" r="3.2" fill="#ffd591"/>
+    </g>
+    <g id="d">
+      <path d="M0 -8c5 7 8 10 8 14a8 8 0 0 1-16 0c0-4 3-7 8-14z" fill="#d8eef7"/>
+    </g>
+    <g id="l">
+      <path d="M0 0c8-10 18-8 18 0 0 8-10 12-18 0z" fill="#e0efd4"/>
+      <path d="M2 2 15 -2" stroke="#c3ddae" stroke-width="1.2"/>
+    </g>
+    <g id="p">
+      <ellipse cx="0" cy="0" rx="4" ry="5" fill="#ffdfb9"/>
+      <circle cx="-5" cy="-5" r="1.8" fill="#ffdfb9"/>
+      <circle cx="0" cy="-7" r="1.8" fill="#ffdfb9"/>
+      <circle cx="5" cy="-5" r="1.8" fill="#ffdfb9"/>
+    </g>
+    <g id="h">
+      <path d="M0 4c-5-7-13-2-10 5 2 5 10 10 10 10s8-5 10-10c3-7-5-12-10-5z" fill="#ffd7ce"/>
+    </g>
+  </defs>
+
+  <rect width="300" height="300" fill="#fffaf3"/>
+
+  <!-- 稀疏分布，元素不跨边界，平铺无接缝 -->
+  <use href="#c" xlink:href="#c" x="26" y="28"/>
+  <use href="#s" xlink:href="#s" x="112" y="22"/>
+  <use href="#h" xlink:href="#h" x="228" y="36"/>
+  <use href="#f" xlink:href="#f" x="188" y="76"/>
+  <use href="#d" xlink:href="#d" x="60" y="92"/>
+  <use href="#p" xlink:href="#p" x="266" y="118" transform="rotate(-18 266 118)"/>
+  <use href="#s" xlink:href="#s" x="18" y="152"/>
+  <use href="#l" xlink:href="#l" x="120" y="136" transform="rotate(25 120 136)"/>
+  <use href="#c" xlink:href="#c" x="214" y="160" transform="scale(0.8) translate(53 40)"/>
+  <use href="#h" xlink:href="#h" x="86" y="212"/>
+  <use href="#f" xlink:href="#f" x="252" y="238"/>
+  <use href="#d" xlink:href="#d" x="160" y="258"/>
+  <use href="#p" xlink:href="#p" x="34" y="262" transform="rotate(20 34 262)"/>
+  <use href="#l" xlink:href="#l" x="196" y="286" transform="rotate(-30 196 286)"/>
+  <use href="#s" xlink:href="#s" x="282" y="208" transform="scale(0.7) translate(120 90)"/>
+
+  <!-- 极淡小圆点，增加一点节奏 -->
+  <g fill="#ffe9e0" opacity="0.8">
+    <circle cx="76" cy="52" r="2.5"/>
+    <circle cx="150" cy="96" r="2"/>
+    <circle cx="240" cy="118" r="2.5"/>
+    <circle cx="42" cy="196" r="2"/>
+    <circle cx="132" cy="222" r="2.5"/>
+    <circle cx="218" cy="262" r="2"/>
+    <circle cx="278" cy="68" r="2"/>
+  </g>
+</svg>
